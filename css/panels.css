@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+.intro {
+  font-size: 1.25em;
+}
+
+.accordion {
+    width: 70%;
+    margin-left: 13%;
+}
+
+.js .panel-title {
+  margin: 0;
+}
+.panel-title a {
+  border-bottom: none;
+  color: #990101;
+  display: block;
+  padding: 1.25em 0;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: color 200ms ease 0s;
+  -moz-transition: color 200ms ease 0s;
+  transition: color 200ms ease 0s;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-align:center;
+}
+.panel-title a .icon {
+  color: #990101;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 200ms ease 0s;
+  -moz-transition: all 200ms ease 0s;
+  transition: all 200ms ease 0s;
+}
+.panel-title a:hover,
+.panel-title a:focus {
+  color: #481717;
+}
+.panel-title a:hover .icon,
+.panel-title a:focus .icon {
+  opacity:.9;
+}
+.panel-title a.active {
+  opacity:.9;
+}
+.panel-title a.active .icon {
+  color: #990101;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.js .accordion {
+  border-bottom: 2px solid #990101;
+  margin: 2em 0;
+}
+.accordion .panel-title a {
+  border-top: 1px solid #990101;
+}
+[id^="panel-"] {
+  padding-bottom: 2em;
+}
+
+.panel-content p {
+    color: #990101;
+}
